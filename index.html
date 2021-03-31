@@ -19,7 +19,7 @@
       <p>Learning Agile Project Management</p>
     </div>
     <header class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-      <nav>
+      <nav class="d-flex p-3 bg-dark text-white">
         <button
           class="navbar-toggler"
           data-toggle="collapse"
@@ -30,25 +30,65 @@
 
         <div class="collapse navbar-collapse" id="collapse_target">
           <a class="navbar-brand"><img src="img/boitmann.png" /></a>
-          <span class="navbar-text">Gym-ClubEx</span>
+          <span class="navbar-text"><h4>Gym-ClubEx</h4></span>
 
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
             </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                data-target="dropdown_target"
+              >
+                Program
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                <a class="dropdown-item">Boxing</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">Yoga</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">Aerobics</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">Pilates</a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gym Program</a>
+              <a class="nav-link" href="#">Log In</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sign Up</a>
             </li>
           </ul>
         </div>
+        <form class="form-inline" action="/action_page.php">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+          />
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
       </nav>
     </header>
+    <!-- <footer>
+      <div>
+        <ul>
+          <li>Train with Us</li>
+
+          <li>Company</li>
+          <li>Why ClubEx</li>
+          <li>Global Gym Network</li>
+          <li>Follow Us</li>
+        </ul>
+      </div>
+    </footer> -->
     <img class="img-fluid" src="img/frontpage.png" alt="frontpagePhoto" />
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
